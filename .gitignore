@@ -1,0 +1,6 @@
+sshkeys/**
+!sshkeys/.gitkeep
+.terraform
+terraform.tfstate.backup
+terraform.tfstate
+.terraform.lock.hcl

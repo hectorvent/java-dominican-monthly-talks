@@ -1,0 +1,5 @@
+---
+- name: Setting the HAProxy
+  hosts: load-balancer
+  roles:
+    - haproxy

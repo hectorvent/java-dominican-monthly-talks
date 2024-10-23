@@ -1,0 +1,8 @@
+name: iac-for-everyone
+runtime: java
+description: IaC for Everyone - JConf Dominicana
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: java
+      jug: Java Dominicana

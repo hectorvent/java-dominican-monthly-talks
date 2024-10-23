@@ -1,0 +1,19 @@
+---
+# tasks file for nginx
+- name: Install Nginx web server
+  apt:
+    update_cache: yes
+    pkg:
+      - nginx
+
+- name: Copy favicon
+  copy:
+    src: favicon.ico
+    dest: /var/www/html
+
+- name: Render index template
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.nginx-debian.html
+  notify:
+    - Reiniciar Nginx
